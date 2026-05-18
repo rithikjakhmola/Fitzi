@@ -1,0 +1,190 @@
+*{
+    margin: 0px ; 
+    padding : 0px ; 
+}
+
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* ADD THIS: Kills the main page scroll */
+  font-family: 'Inter', sans-serif; 
+}
+
+/* Left Panel - Form */
+.auth-form-section {
+  flex: 1;
+  background-color: #e2e8f0; /* Light industrial gray */
+  padding: 4rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.brand-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #1a202c;
+}
+
+.form-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.diamond-icon {
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="number"] {
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #cbd5e0;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #000;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-btn {
+  background-color: #edf2f7;
+  border: 1px solid #cbd5e0;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.toggle-text {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.toggle-link {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Right Panel - Image & Brand Box */
+.auth-image-section {
+  flex: 1;
+  position: relative;
+  display: none; /* Hidden on small screens */
+}
+
+@media (min-width: 768px) {
+  .auth-image-section {
+    display: block;
+  }
+}
+
+.bg-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* ADD THIS: Removes the tiny white gap at the bottom */
+}
+.orange-brand-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 192, 203, 1);/* Coral/Orange color */
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orange-brand-box h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.auth-form-section::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.auth-form-section {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Update this block in Login.css */
+.auth-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* ADD THIS: Kills the main page scroll */
+  font-family: 'Inter', sans-serif; 
+}
+
+/* Update this block in Login.css */
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* ADD THIS: Removes the tiny white gap at the bottom */
+}
