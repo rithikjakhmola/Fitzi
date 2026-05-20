@@ -1,6 +1,6 @@
 // frontend/src/pages/Login.jsx
 import React, { useState } from "react";
-import "./Login.css";
+import "./login.css";
 import siteModel from "../assets/siteModel.png";
 
 const Login = ({ onLoginSuccess }) => {

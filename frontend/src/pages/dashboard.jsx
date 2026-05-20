@@ -1,7 +1,7 @@
 // frontend/src/pages/Dashboard.jsx
 
 import React, { useState } from "react";
-import "./Login.css";
+import "./login.css";
 import DietPlan from "./DietPlan";
 import FoodLogger from "./FoodLogger";
 import ProgressChart from "./ProgressChart";
