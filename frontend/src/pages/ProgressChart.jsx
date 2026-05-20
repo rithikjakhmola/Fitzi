@@ -9,7 +9,7 @@ const ProgressChart = ({ user, refreshTrigger }) => {
   const fetchProgress = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:3000/api/weekly-progress/${user.id}`);
+      const response = await fetch(`https://fitzi-backend.onrender.com/api/weekly-progress/${user.id}`);
       const chartData = await response.json();
       if (response.ok) {
         setData(chartData);

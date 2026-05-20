@@ -24,7 +24,7 @@ const FoodLogger = ({ user,onMealLogged }) => {
     setLoading(true);
     
     try {
-      const response = await fetch('http://localhost:3000/api/analyze-food', {
+      const response = await fetch('https://fitzi-backend.onrender.com/api/analyze-food', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ imageBase64: imagePreview, weightGrams: Number(weight) })
@@ -45,7 +45,7 @@ const FoodLogger = ({ user,onMealLogged }) => {
 
   const logMeal = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/log-meal', {
+      const response = await fetch('https://fitzi-backend.onrender.com/api/log-meal', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userId: user.id, ...analyzedData })

@@ -30,7 +30,7 @@ const Login = ({ onLoginSuccess }) => {
     e.preventDefault();
 
     const endpoint = isLogin ? "/api/login" : "/api/register";
-    const url = `http://localhost:3000${endpoint}`;
+    const url = `https://fitzi-backend.onrender.com${endpoint}`;
 
     try {
       const response = await fetch(url, {
