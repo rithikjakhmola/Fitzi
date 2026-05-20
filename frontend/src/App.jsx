@@ -1,7 +1,7 @@
 // frontend/src/App.jsx
 import React, { useState } from "react";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import Login from "./pages/login";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   // State to track if a user is logged in and store their data
